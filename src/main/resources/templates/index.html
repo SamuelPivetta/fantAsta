@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asta Fantacalcio</title>
+    <link th:href="@{css/style.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{css/header.css}" rel="stylesheet" type="text/css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   
+
+</head>
+
+<body>
+  
+    <header>
+
+        <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+        <div class="overlay"></div>
+      
+        <!-- The HTML5 video element that will create the background video on the header -->
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+          <source th:src="@{/video/Ball.mp4}" type="video/mp4">
+        </video>
+      
+        <!-- The header content -->
+        <div class="container">
+        
+              <h1 class="title">FantAsta</h1>
+              <!-- <p class="lead mb-0">Using HTML5 Video and Bootstrap</p> -->
+            
+        </div>
+      </header>
+
+      <section>
+        <!--SECTION è IL FLEX CONTAINER-->
+        <article>
+            <!--ARTICLE SONO I FLEX ITEM-->
+            
+            <div class="container">
+              <h2 class="subtitle">Asta</h2>
+           
+              <a href="/calciatore/asta"> <img style="border: solid black;" th:src="@{/img/martello.png}"></a>
+            </div>
+          
+            
+        </article>
+
+        <article>
+           
+
+            <div class="container">
+             <h2 class="subtitle">Listone</h2>
+              <a href="asta.html"> <img style="border: solid black;" th:src="@{/img/fascicolo.jpg}"></a>
+            </div>
+
+        </article>
+        <article>
+            
+            <div class="container">
+              <h2 class="subtitle">Editor</h2>
+              <a href="calciatore/mostraelenco"> <img style="border: solid black;" th:src="@{/img/editor.jpg}"></a>
+            </div>
+        </article>
+
+    </section>
+      
+    
+</body>
+</html>

@@ -1,0 +1,370 @@
+{
+	"info": {
+		"_postman_id": "83a237c5-8271-4f3e-8032-4bbe2618e84f",
+		"name": "fantAsta",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19332521"
+	},
+	"item": [
+		{
+			"name": "Calciatore",
+			"item": [
+				{
+					"name": "Insert Calciatore",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY2MzY3MDI0MiwiZXhwIjoxNjY0NTM0MjQyfQ.13mJnmPI5Mmh9HfqtjZNmpI69AXEuEQ5Pb3NxXp4rty03TYa7I2LEpuurCkII0gKaAQD3GduaRZveY6WWkDAGw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n  \"nome\": \"Mario\",\r\n  \"cognome\": \"Balotelli\",\r\n  \"ruolo\": \"ATTACCANTE\",\r\n  \"club\": \"INTER\",\r\n  \"valore\": 12\r\n  \r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/calciatore",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"calciatore"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Calciatore",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY2MzY3MDI0MiwiZXhwIjoxNjY0NTM0MjQyfQ.13mJnmPI5Mmh9HfqtjZNmpI69AXEuEQ5Pb3NxXp4rty03TYa7I2LEpuurCkII0gKaAQD3GduaRZveY6WWkDAGw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/calciatore/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"calciatore",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Calciatore",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY2MzY3MDI0MiwiZXhwIjoxNjY0NTM0MjQyfQ.13mJnmPI5Mmh9HfqtjZNmpI69AXEuEQ5Pb3NxXp4rty03TYa7I2LEpuurCkII0gKaAQD3GduaRZveY6WWkDAGw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n  \"nome\": \"Vincenzio\",\r\n  \"cognome\": \"Iaquinta\",\r\n  \"ruolo\": \"ATTACCANTE\",\r\n  \"club\": \"JUVENTUS\"\r\n \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/calciatore/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"calciatore",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista Calciatori",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY2MzY3MDI0MiwiZXhwIjoxNjY0NTM0MjQyfQ.13mJnmPI5Mmh9HfqtjZNmpI69AXEuEQ5Pb3NxXp4rty03TYa7I2LEpuurCkII0gKaAQD3GduaRZveY6WWkDAGw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/calciatore",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"calciatore"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddCalciatoreAFantaSquadra",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY2MzY3MDI0MiwiZXhwIjoxNjY0NTM0MjQyfQ.13mJnmPI5Mmh9HfqtjZNmpI69AXEuEQ5Pb3NxXp4rty03TYa7I2LEpuurCkII0gKaAQD3GduaRZveY6WWkDAGw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/calciatoresquadra/1/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"calciatoresquadra",
+								"1",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Login Admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"userName\" : \"admin\",\r\n\"password\" : \"admin\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FantaSquadra",
+			"item": [
+				{
+					"name": "Insert FantaSquadra",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY2MzY3MDI0MiwiZXhwIjoxNjY0NTM0MjQyfQ.13mJnmPI5Mmh9HfqtjZNmpI69AXEuEQ5Pb3NxXp4rty03TYa7I2LEpuurCkII0gKaAQD3GduaRZveY6WWkDAGw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \r\n  \"nome\": \"Squadra2\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/fantasquadra",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"fantasquadra"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista FantaSquadre",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY2MzY3MDI0MiwiZXhwIjoxNjY0NTM0MjQyfQ.13mJnmPI5Mmh9HfqtjZNmpI69AXEuEQ5Pb3NxXp4rty03TYa7I2LEpuurCkII0gKaAQD3GduaRZveY6WWkDAGw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/fantasquadra",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"fantasquadra"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update FantaSquadra",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY2MzY3MDI0MiwiZXhwIjoxNjY0NTM0MjQyfQ.13mJnmPI5Mmh9HfqtjZNmpI69AXEuEQ5Pb3NxXp4rty03TYa7I2LEpuurCkII0gKaAQD3GduaRZveY6WWkDAGw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \r\n  \"nome\": \"Squadra4\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/fantasquadra/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"fantasquadra",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete FantaSquadra",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY2MzY3MDI0MiwiZXhwIjoxNjY0NTM0MjQyfQ.13mJnmPI5Mmh9HfqtjZNmpI69AXEuEQ5Pb3NxXp4rty03TYa7I2LEpuurCkII0gKaAQD3GduaRZveY6WWkDAGw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/fantasquadra/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"fantasquadra",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AddCalciatoreAFantaSquadra",
+			"item": []
+		}
+	]
+}

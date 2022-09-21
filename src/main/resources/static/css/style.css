@@ -1,0 +1,82 @@
+.title {
+	font-family: Baskerville, Times, 'Times New Roman', serif;
+	color: white;
+	font-size: 100px;
+	font-variant: small-caps;
+	text-align: center;
+	padding-top: 125px;
+}
+
+.subtitle {
+	font-family: Baskerville, Times, 'Times New Roman', serif;
+	color: white;
+	font-size: 70px;
+	font-variant: small-caps;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	width: 70%;
+	border-radius: 20px;
+}
+
+article {
+	padding: 10px;
+	margin: 10px;
+	flex: 200px;
+}
+
+section {
+	display: flex;
+	flex-flow: row wrap;
+	height: 350px;
+	/* jsuty e aliing sono imporatanti per allineare gli item*/
+	align-items: center;
+}
+
+.container {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+.containerasta {
+	position: relative;
+	text-align: center;
+	color: black;
+}
+
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 10px;
+}
+
+/*table*/
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 2px;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: white;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: gainsboro;
+}
+
+/* Centered text */
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
