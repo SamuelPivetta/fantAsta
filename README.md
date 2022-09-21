@@ -10,7 +10,7 @@ All'interno dell'applicazione sarà presente una lista di giocatori partecipanti
 basato su determinati valori, la squadre reale a cui il giocatore appertiene, il ruolo ecc.
 
 Sarò possibile per l'amministratore, aggiungere modificare e cancellare i giocatori, le fanta squadre, e gli allentaori presenti in lista,
-mentre per l'utente la solo visione della lista e la partecipazione all'asta.
+mentre per l'utente la solo visione della lista e la partecipazione all'asta, e poter aggiungere i giocatori alla propria Fantasquadra.
 
 L'applicazione è in fase di sviluppo, si possono eseguire al momento tutte le funzioni necessarie a gestire le operazioni CRUD da servizio REST,
 con l'utizizzo di SWAGGER o POSTMAN(collection presente all'interno del progetto).
