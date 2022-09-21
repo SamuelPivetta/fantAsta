@@ -7,7 +7,7 @@ ogni giocatore partira con dei crediti e potrà effettuare una determinata punta
 Questa applicazione è stata creata per agevolare i giocatori ad avere un miglior controllo sull'andamento del proprio "mercato" in fase d'asta.
 
 All'interno dell'applicazione sarà presente una lista di giocatori partecipanti al campionato desiderato, con informazioni relative ad esso, il prezzo del giocatore
-basato sulla "Gazzetta dello Sport", la squadre reale a cui il giocatore appertiene, il ruolo ecc.
+basato su determinati valori, la squadre reale a cui il giocatore appertiene, il ruolo ecc.
 
 Sarò possibile per l'amministratore, aggiungere modificare e cancellare i giocatori,le fanta squadre, e gli allentaori presenti in lista,
 mentre per l'utente la solo visione della lista e la partecipazione all'asta.
