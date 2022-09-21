@@ -9,7 +9,7 @@ Questa applicazione è stata creata per agevolare i giocatori ad avere un miglio
 All'interno dell'applicazione sarà presente una lista di giocatori partecipanti al campionato desiderato, con informazioni relative ad esso, il prezzo del giocatore
 basato su determinati valori, la squadre reale a cui il giocatore appertiene, il ruolo ecc.
 
-Sarò possibile per l'amministratore, aggiungere modificare e cancellare i giocatori,le fanta squadre, e gli allentaori presenti in lista,
+Sarò possibile per l'amministratore, aggiungere modificare e cancellare i giocatori, le fanta squadre, e gli allentaori presenti in lista,
 mentre per l'utente la solo visione della lista e la partecipazione all'asta.
 
 L'applicazione è in fase di sviluppo, si possono eseguire al momento tutte le funzioni necessarie a gestire le operazioni CRUD da servizio REST,
